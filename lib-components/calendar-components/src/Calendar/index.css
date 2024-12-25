@@ -1,0 +1,102 @@
+.calendar {
+  width: 100%;
+  height: 200px;
+  /* background: blue; */
+}
+
+.calendar-month>.calendar-month-week-list {
+  display: flex;
+  padding: 0;
+  width: 100%;
+  box-sizing: border-box;
+  border-bottom: 1px solid #ccc;
+}
+
+.calendar-month>.calendar-month-week-list>.calendar-month-week-list-item {
+  padding: 20px 16px;
+  text-align: left;
+  color: #7d7d7f;
+  flex: 1;
+}
+
+.calendar-month-body>.calendar-month-body-row {
+  display: flex;
+  height: 100px;
+  /* align-items: center; */
+  /* justify-content: space-around; */
+}
+
+.calendar-month-body>.calendar-month-body-row>.calendar-month-body-cell {
+  flex: 1;
+  border: 1px solid #eee;
+  color: #ccc;
+  overflow: hidden;
+}
+
+.calendar-month-body>.calendar-month-body-row>.calendar-month-body-cell>.calendar-month-body-cell-date {
+  padding: 10px;
+}
+
+.calendar-month-body>.calendar-month-body-row>.calendar-month-body-cell>.calendar-month-body-cell-date>.calendar-month-body-cell-date-value-selected {
+  background: blue;
+  width: 28px;
+  height: 28px;
+  line-height: 28px;
+  text-align: center;
+  color: #fff;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.calendar-month-body>.calendar-month-body-row>.calendar-month-body-cell.calendar-month-body-cell-current {
+  color: #000;
+}
+
+/* header */
+.calendar-header>.calendar-header-left {
+  display: flex;
+  align-items: center;
+
+  height: 28px;
+  line-height: 28px;
+}
+
+.calendar-header>.calendar-header-left>.calendar-header-text {
+  font-size: 20px;
+}
+
+.calendar-header>.calendar-header-left>.calendar-header-btn {
+  background: #eee;
+  cursor: pointer;
+  border: 0;
+  padding: 0 15px;
+  line-height: 28px;
+}
+
+.calendar-header>.calendar-header-left>.calendar-header-btn:hover {
+  background: #ccc;
+}
+
+.calendar-header>.calendar-header-left>.calendar-header-icon {
+  width: 28px;
+  height: 28px;
+
+  line-height: 28px;
+
+  border-radius: 50%;
+  text-align: center;
+  font-size: 12px;
+
+  user-select: none;
+  cursor: pointer;
+
+  margin-right: 12px;
+}
+
+.calendar-header>.calendar-header-left>.calendar-header-icon:not(:first-child) {
+  margin: 0 12px;
+}
+
+.calendar-header>.calendar-header-left>.calendar-header-icon:hover {
+  background: #ccc;
+}

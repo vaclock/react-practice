@@ -3,10 +3,14 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "ahooks": "^3.8.4",
+    "classnames": "^2.5.1",
     "cra-template-typescript": "1.2.0",
+    "dayjs": "^1.11.13",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
-    "react-scripts": "5.0.1"
+    "react-scripts": "5.0.1",
+    "sass": "^1.83.0"
   },
   "scripts": {
     "start": "react-scripts start",
@@ -31,5 +35,10 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "@types/react": "^19.0.2",
+    "prettier": "^3.4.2",
+    "web-vitals": "^4.2.4"
   }
 }
